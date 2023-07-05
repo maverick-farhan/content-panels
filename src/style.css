@@ -26,6 +26,10 @@ height:100%;
 }
 div.container ul.accordion{
  display:flex;
+ -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
  flex-direction:column;
  justify-content: center;
  align-items:center;
@@ -51,7 +55,9 @@ span#show{
     top:50%;
     transform:translateY(-50%);
 }
-div.accordion-panel{
+
+
+.accordion-control + div.accordion-panel{
 width:50rem;
 display:flex;
 flex-direction: row;
@@ -61,15 +67,11 @@ padding:2rem;
 background-color: #fff;
 display:none;
 }
-div.active{
-width:50rem;
-display:flex;
-flex-direction: row;
-justify-content: space-between;
-align-items:center;
-padding:2rem;
-background-color: #fff;
+
+.accordion-control.active + .accordion-panel {
+display: flex;
 }
+
 
 div#img{
 width:30%;

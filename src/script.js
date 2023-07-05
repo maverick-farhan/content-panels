@@ -1,12 +1,24 @@
 //Accordion
-let contents = document.querySelectorAll('.accordion-panel');
 let controls = document.querySelectorAll('.accordion-control');
-let current = document.querySelector('div.active');
-controls.forEach(element => {
-    element.addEventListener('click',(e)=>{
+//let current = document.querySelector('div.active');
+controls.forEach((control) => {
+    control.addEventListener('click',(e)=>{
     e.preventDefault();
-console.log(e);
-})
+    
+    if (control.classList.contains("active"))
+    {
+            control.classList.remove("active")
+          
+    }
+        else{
+        let active = document.querySelectorAll('.active');
+            active.forEach((active)=>{
+                active.classList.remove('active');
+            });
+            control.classList.add('active');
+          }       
+    e.stopPropagation();
+},true);
 });
 //Tabbed Panel
 //Modal Window
