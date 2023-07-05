@@ -8,13 +8,13 @@ controls.forEach((control) => {
     if (control.classList.contains("active"))
     {
             control.classList.remove("active")
-          
     }
         else{
         let active = document.querySelectorAll('.active');
             active.forEach((active)=>{
-                active.classList.remove('active');
+            active.classList.remove('active');
             });
+           
             control.classList.add('active');
           }       
     e.stopPropagation();

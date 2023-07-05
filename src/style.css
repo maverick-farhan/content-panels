@@ -59,7 +59,6 @@ span#show{
 
 .accordion-control + div.accordion-panel{
 width:50rem;
-display:flex;
 flex-direction: row;
 justify-content: space-between;
 align-items:center;
@@ -68,7 +67,7 @@ background-color: #fff;
 display:none;
 }
 
-.accordion-control.active + .accordion-panel {
+.accordion-control.active + div.accordion-panel {
 display: flex;
 }
 
