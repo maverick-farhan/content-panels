@@ -38,6 +38,7 @@ div.container ul.accordion{
 ul.accordion li{
 width:50rem;
 background-color:#FFC95F;
+transition:all 1s ease;
 }
 ul.accordion li>button{
 all:unset;
@@ -65,10 +66,16 @@ align-items:center;
 padding:2rem;
 background-color: #fff;
 display:none;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 2%, 0 2%);
+ clip-path: polygon(0 0, 100% 0, 100% 2%, 0 2%);
+transition:clip-path 1s ease;
 }
 
 .accordion-control.active + div.accordion-panel {
 display: flex;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+transition:clip-path 1s ease;
 }
 
 

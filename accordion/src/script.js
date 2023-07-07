@@ -1,9 +1,15 @@
 //Accordion
 let controls = document.querySelectorAll('.accordion-control');
-//let current = document.querySelector('div.active');
-controls.forEach((control) => {
+let content = document.querySelectorAll('div.accordion-panel')
+content.forEach((elem)=>{
+        elem.style.transition = "clip-path 1s ease";
+        console.log(elem)
+    })
+
+    controls.forEach((control) => {
     control.addEventListener('click',(e)=>{
     e.preventDefault();
+
     
     if (control.classList.contains("active"))
     {
@@ -20,7 +26,3 @@ controls.forEach((control) => {
     e.stopPropagation();
 },true);
 });
-//Tabbed Panel
-//Modal Window
-//Responsive Slider
-//Photo Viewer
