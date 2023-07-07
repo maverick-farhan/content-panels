@@ -1,0 +1,48 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: #85A389;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container{
+    width:600px;
+    height:600px;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+div.mini-map{
+    width:30%;
+    display:flex;
+    flex-direction: column;
+}
+div.mini-map img{
+    width:130px;
+    margin:5px;
+    opacity: .5;
+    cursor:pointer;
+    background-color: bisque;
+    height: 130px;
+}
+div.mini-map img.active{
+opacity:1;
+}
+div.big-img{
+    width:70%;
+    height:auto;
+    background-color: bisque;
+}
+div.big-img img{
+    width:100%;
+    height:100%;
+}
