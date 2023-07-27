@@ -78,7 +78,9 @@ display: flex;
 transition:clip-path 1s ease;
 }
 
+.accordion-control.active  {
 
+}
 div#img{
 width:30%;
 }
